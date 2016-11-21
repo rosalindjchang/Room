@@ -664,3 +664,5 @@ Cmd: compileSnippet
   api=14 type=1 insize=595 outsize=2857 kw=_EMISSION pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP ok=1
 Cmd: disassembleShader
   api=24 insize=2857 outsize=2857 ok=1
+
+Quitting shader compiler process

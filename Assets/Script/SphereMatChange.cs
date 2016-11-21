@@ -11,8 +11,6 @@ public class SphereMatChange : MonoBehaviour {
 	
 	void Update () {
 	
-		if (Input.GetMouseButtonDown (0)) {
-			rend.material.SetColor ("_Color", Color.red);
-		}
+
 	}
 }
