@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraLook : MonoBehaviour {
 
 	public Camera playerCamera;
-	//public float speed = 5f;
+	public float speed = 0.01f;
 	public bool isFrozen;
 	public Transform target;
 
@@ -24,20 +24,11 @@ public class CameraLook : MonoBehaviour {
 			isFrozen = false;
 			Debug.Log ("dontlook");
 		}
-
-		//RaycastHit hit;
-		//Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
-
-		//if (Physics.Raycast (ray, out hit)) {
-			//isFrozen = false;
-		//} else {
-			//isFrozen = true;
-			//Transform objectHit = hit.transform;
-		//}
+			
 		
 		if (!isFrozen) {
-			//transform.Translate (0, speed * Time.deltaTime, 0);
-			transform.Translate (Vector3.forward * Time.deltaTime);
+			transform.Translate (0, speed * Time.deltaTime, speed * Time.deltaTime);
+			//transform.Translate (Vector3.forward * Time.deltaTime);
 		} else {
 			
 		}
