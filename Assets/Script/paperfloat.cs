@@ -4,7 +4,7 @@ using System.Collections;
 public class paperfloat : MonoBehaviour {
 
 	public Camera playerCamera;
-	public float speed = 0.01f;
+	public float speed = 0.5f;
 	public bool isFrozen;
 	public Transform target;
 
@@ -27,7 +27,7 @@ public class paperfloat : MonoBehaviour {
 
 
 		if (!isFrozen) {
-			transform.Translate (0, -speed * Time.deltaTime, 0);
+			transform.Translate (0, speed * Time.deltaTime, 0);
 			//transform.Translate (Vector3.forward * Time.deltaTime);
 		} else {
 

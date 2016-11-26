@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class boxshelffloat : MonoBehaviour {
-
+public class magazinefloat : MonoBehaviour {
 
 	public Camera playerCamera;
-	public float speed = 0.3f;
+	public float speed = 0.5f;
 	public bool isFrozen;
 	public Transform target;
 
@@ -28,11 +27,12 @@ public class boxshelffloat : MonoBehaviour {
 
 
 		if (!isFrozen) {
-			transform.Translate (0, speed * Time.deltaTime, 0);
+			transform.Translate (0, -speed * Time.deltaTime, 0);
 			//transform.Translate (Vector3.forward * Time.deltaTime);
 		} else {
 
 		}
-	}
 
+
+	}
 }

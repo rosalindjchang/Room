@@ -10,7 +10,18 @@ public class room2Trigger : MonoBehaviour {
 	public GameObject pillow4;
 	public GameObject pillow5;
 	public GameObject paper;
-	public GameObject boxshelf;
+	public GameObject plant;
+	public GameObject book;
+	public GameObject book1;
+	public GameObject book2;
+	public GameObject book3;
+	public GameObject book4;
+	public GameObject book5;
+	public GameObject book6;
+	public GameObject book7;
+	public GameObject book8;
+	public GameObject book9;
+	public GameObject book10;
 
 	void Start() {
 		pillow.GetComponent<CameraLook> ().enabled = false;
@@ -19,8 +30,19 @@ public class room2Trigger : MonoBehaviour {
 		pillow3.GetComponent<CameraLook> ().enabled = false;
 		pillow4.GetComponent<CameraLook> ().enabled = false;
 		pillow5.GetComponent<CameraLook> ().enabled = false;
-		paper.GetComponent<paperfloat> ().enabled = false;
-		boxshelf.GetComponent<boxshelffloat> ().enabled = false;
+		paper.GetComponent<magazinefloat> ().enabled = false;
+		plant.GetComponent<plantfloat> ().enabled = false;
+		book.GetComponent<paperfloat> ().enabled = false;
+		book1.GetComponent<paperfloat> ().enabled = false;
+		book2.GetComponent<paperfloat> ().enabled = false;
+		book3.GetComponent<paperfloat> ().enabled = false;
+		book4.GetComponent<paperfloat> ().enabled = false;
+		book5.GetComponent<paperfloat> ().enabled = false;
+		book6.GetComponent<paperfloat> ().enabled = false;
+		book7.GetComponent<paperfloat> ().enabled = false;
+		book8.GetComponent<paperfloat> ().enabled = false;
+		book9.GetComponent<paperfloat> ().enabled = false;
+		book10.GetComponent<paperfloat> ().enabled = false;
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -31,8 +53,19 @@ public class room2Trigger : MonoBehaviour {
 		pillow3.GetComponent<CameraLook> ().enabled = true;
 		pillow4.GetComponent<CameraLook> ().enabled = true;
 		pillow5.GetComponent<CameraLook> ().enabled = true;
-		paper.GetComponent<paperfloat> ().enabled = true;
-		boxshelf.GetComponent<boxshelffloat> ().enabled = true;
+		paper.GetComponent<magazinefloat> ().enabled = true;
+		plant.GetComponent<plantfloat> ().enabled = true;
+		book.GetComponent<paperfloat> ().enabled = true;
+		book1.GetComponent<paperfloat> ().enabled = true;
+		book2.GetComponent<paperfloat> ().enabled = true;
+		book3.GetComponent<paperfloat> ().enabled = true;
+		book4.GetComponent<paperfloat> ().enabled = true;
+		book5.GetComponent<paperfloat> ().enabled = true;
+		book6.GetComponent<paperfloat> ().enabled = true;
+		book7.GetComponent<paperfloat> ().enabled = true;
+		book8.GetComponent<paperfloat> ().enabled = true;
+		book9.GetComponent<paperfloat> ().enabled = true;
+		book10.GetComponent<paperfloat> ().enabled = true;
 
 	}
 
@@ -45,6 +78,16 @@ public class room2Trigger : MonoBehaviour {
 		pillow4.SetActive (false);
 		pillow5.SetActive (false);
 		paper.SetActive (false);
-		boxshelf.SetActive (false);
+		plant.SetActive (false);
+		book.SetActive (false);
+		book2.SetActive (false);
+		book3.SetActive (false);
+		book4.SetActive (false);
+		book5.SetActive (false);
+		book6.SetActive (false);
+		book7.SetActive (false);
+		book8.SetActive (false);
+		book9.SetActive (false);
+		book10.SetActive (false);
 	}
 }

@@ -58,8 +58,10 @@
      <Compile Include="Assets\Script\FadeObjects.cs" />
      <Compile Include="Assets\Script\SinkDown.cs" />
      <Compile Include="Assets\Script\SphereMatChange.cs" />
-     <Compile Include="Assets\Script\boxshelffloat.cs" />
+     <Compile Include="Assets\Script\boxshelfsink.cs" />
+     <Compile Include="Assets\Script\magazinefloat.cs" />
      <Compile Include="Assets\Script\paperfloat.cs" />
+     <Compile Include="Assets\Script\plantfloat.cs" />
      <Compile Include="Assets\Script\room2Trigger.cs" />
      <Compile Include="Assets\Script\room3Trigger.cs" />
      <Compile Include="Assets\Script\room4Trigger.cs" />

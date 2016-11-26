@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraLook : MonoBehaviour {
 
 	public Camera playerCamera;
-	public float speed = 0.01f;
+	public float speed = 0.5f;
 	public bool isFrozen;
 	public Transform target;
 
