@@ -2,25 +2,41 @@
 using System.Collections;
 
 public class FadeObjects : MonoBehaviour {
+	
+	[SerializeField] private float fadePerSecond = 0.05f;
 
-	// Use this for initialization
-	void Start () {
-	
+	public Camera playerCamera;
+	public bool isFrozen;
+	public Transform target;
+
+	void Start(){
+		isFrozen = true;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		StartCoroutine(FadeTo(1.0f, 1.0f));
+
+		Vector3 viewPos = playerCamera.WorldToViewportPoint (target.position);
+
+		if (viewPos.x > 0 && viewPos.x < 1 && viewPos.y > 0 && viewPos.y < 1 && viewPos.z > 0) {
+			isFrozen = true;
+			Debug.Log ("look");
+		} else {
+			isFrozen = false;
+			Debug.Log ("dontlook");
+		}
+
+
+		if (!isFrozen) {
+			var material = GetComponent<Renderer>().material;
+			var color = material.color;
+
+			material.color = new Color(color.r, color.g, color.b, color.a - (fadePerSecond * Time.deltaTime));
+		} else {
+
+		}
+
+
 	}
 
-	IEnumerator FadeTo(float aValue, float aTime)
-	{
-		float alpha = transform.renderer.material.color.a;
-		for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
-		{
-			Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,aValue,t));
-			transform.renderer.material.color = newColor;
-			yield return null;
-		}
-}
 
+}
