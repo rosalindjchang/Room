@@ -28,7 +28,7 @@ public class SinkDown : MonoBehaviour {
 
 
 		if (!isFrozen) {
-			transform.Translate (0, -speed * Time.deltaTime, speed * Time.deltaTime);
+			transform.Translate (0, 0, -speed * Time.deltaTime);
 			//transform.Translate (Vector3.forward * Time.deltaTime);
 		} else {
 

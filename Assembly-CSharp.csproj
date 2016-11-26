@@ -60,6 +60,7 @@
      <Compile Include="Assets\Script\boxshelffloat.cs" />
      <Compile Include="Assets\Script\paperfloat.cs" />
      <Compile Include="Assets\Script\room2Trigger.cs" />
+     <Compile Include="Assets\Script\room3Trigger.cs" />
      <None Include="Assets\First Person Drifter Controller\info.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
