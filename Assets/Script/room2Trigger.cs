@@ -23,6 +23,8 @@ public class room2Trigger : MonoBehaviour {
 	public GameObject book9;
 	public GameObject book10;
 	public GameObject door;
+	public Transform floatobjects;
+
 
 	void Start() {
 		pillow.GetComponent<CameraLook> ().enabled = false;
@@ -44,6 +46,8 @@ public class room2Trigger : MonoBehaviour {
 		book8.GetComponent<paperfloat> ().enabled = false;
 		book9.GetComponent<paperfloat> ().enabled = false;
 		book10.GetComponent<paperfloat> ().enabled = false;
+
+		floatobjects = GameObject.FindGameObjectWithTag ("float").transform;
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -68,6 +72,7 @@ public class room2Trigger : MonoBehaviour {
 		book9.GetComponent<paperfloat> ().enabled = true;
 		book10.GetComponent<paperfloat> ().enabled = true;
 		StartCoroutine (wait());
+
 
 	}
 
