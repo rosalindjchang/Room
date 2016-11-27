@@ -55,6 +55,7 @@
      <Compile Include="Assets\First Person Drifter Controller\Scripts\Optional\PauseMenu.cs" />
      <Compile Include="Assets\First Person Drifter Controller\Scripts\Utils\CameraFade.cs" />
      <Compile Include="Assets\Script\CameraLook.cs" />
+     <Compile Include="Assets\Script\Door1Open.cs" />
      <Compile Include="Assets\Script\FadeObjects.cs" />
      <Compile Include="Assets\Script\SinkDown.cs" />
      <Compile Include="Assets\Script\SphereMatChange.cs" />

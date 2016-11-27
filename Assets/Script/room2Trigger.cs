@@ -22,6 +22,7 @@ public class room2Trigger : MonoBehaviour {
 	public GameObject book8;
 	public GameObject book9;
 	public GameObject book10;
+	public GameObject door;
 
 	void Start() {
 		pillow.GetComponent<CameraLook> ().enabled = false;
@@ -66,7 +67,13 @@ public class room2Trigger : MonoBehaviour {
 		book8.GetComponent<paperfloat> ().enabled = true;
 		book9.GetComponent<paperfloat> ().enabled = true;
 		book10.GetComponent<paperfloat> ().enabled = true;
+		StartCoroutine (wait());
 
+	}
+
+	IEnumerator wait() {
+		yield return new WaitForSeconds (2);
+		door.SetActive (false);
 	}
 
 	void OnTriggerExit(Collider other) {
