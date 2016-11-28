@@ -25,10 +25,7 @@ public class room2Trigger : MonoBehaviour {
 	public GameObject door;
 	public GameObject doortrigger;
 
-	public int totalOutOfRoom = 0;
-	public GameObject floatobjects;
-	public Bounds room2bounds;
-
+	public int objectsout;
 
 	void Start() {
 		pillow.GetComponent<CameraLook> ().enabled = false;
@@ -52,46 +49,40 @@ public class room2Trigger : MonoBehaviour {
 		book10.GetComponent<paperfloat> ().enabled = false;
 		doortrigger.SetActive (false);
 
-		floatobjects = GameObject.FindWithTag ("float");
-
-
+		objectsout = 0;
 	}
 
-	void Update() {
-
-		new Vector3 () = floatobjects.transform; 
-		
-		if (room2bounds.Contains (floatobjects)) {
-			totalOutOfRoom++;
+	void Update () {
+		if (objectsout >= 42) {
+			doortrigger.SetActive (true);
 		}
-
 	}
 
 	void OnTriggerEnter(Collider other) {
+		if(other.tag == "Player") {
+			
+			pillow.GetComponent<CameraLook> ().enabled = true;
+			pillow1.GetComponent<CameraLook> ().enabled = true;
+			pillow2.GetComponent<CameraLook> ().enabled = true;
+			pillow3.GetComponent<CameraLook> ().enabled = true;
+			pillow4.GetComponent<CameraLook> ().enabled = true;
+			pillow5.GetComponent<CameraLook> ().enabled = true;
+			paper.GetComponent<magazinefloat> ().enabled = true;
+			plant.GetComponent<plantfloat> ().enabled = true;
+			book.GetComponent<paperfloat> ().enabled = true;
+			book1.GetComponent<paperfloat> ().enabled = true;
+			book2.GetComponent<paperfloat> ().enabled = true;
+			book3.GetComponent<paperfloat> ().enabled = true;
+			book4.GetComponent<paperfloat> ().enabled = true;
+			book5.GetComponent<paperfloat> ().enabled = true;
+			book6.GetComponent<paperfloat> ().enabled = true;
+			book7.GetComponent<paperfloat> ().enabled = true;
+			book8.GetComponent<paperfloat> ().enabled = true;
+			book9.GetComponent<paperfloat> ().enabled = true;
+			book10.GetComponent<paperfloat> ().enabled = true;
+			StartCoroutine (wait());
 
-
-		pillow.GetComponent<CameraLook> ().enabled = true;
-		pillow1.GetComponent<CameraLook> ().enabled = true;
-		pillow2.GetComponent<CameraLook> ().enabled = true;
-		pillow3.GetComponent<CameraLook> ().enabled = true;
-		pillow4.GetComponent<CameraLook> ().enabled = true;
-		pillow5.GetComponent<CameraLook> ().enabled = true;
-		paper.GetComponent<magazinefloat> ().enabled = true;
-		plant.GetComponent<plantfloat> ().enabled = true;
-		book.GetComponent<paperfloat> ().enabled = true;
-		book1.GetComponent<paperfloat> ().enabled = true;
-		book2.GetComponent<paperfloat> ().enabled = true;
-		book3.GetComponent<paperfloat> ().enabled = true;
-		book4.GetComponent<paperfloat> ().enabled = true;
-		book5.GetComponent<paperfloat> ().enabled = true;
-		book6.GetComponent<paperfloat> ().enabled = true;
-		book7.GetComponent<paperfloat> ().enabled = true;
-		book8.GetComponent<paperfloat> ().enabled = true;
-		book9.GetComponent<paperfloat> ().enabled = true;
-		book10.GetComponent<paperfloat> ().enabled = true;
-		StartCoroutine (wait());
-
-
+		}
 
 	}
 
@@ -101,24 +92,33 @@ public class room2Trigger : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider other) {
-		Debug.Log ("exit");
-		pillow.SetActive (false);
-		pillow1.SetActive (false);
-		pillow2.SetActive (false);
-		pillow3.SetActive (false);
-		pillow4.SetActive (false);
-		pillow5.SetActive (false);
-		paper.SetActive (false);
-		plant.SetActive (false);
-		book.SetActive (false);
-		book2.SetActive (false);
-		book3.SetActive (false);
-		book4.SetActive (false);
-		book5.SetActive (false);
-		book6.SetActive (false);
-		book7.SetActive (false);
-		book8.SetActive (false);
-		book9.SetActive (false);
-		book10.SetActive (false);
+		if (other.tag == "Player") {
+			Debug.Log ("exit");
+			pillow.SetActive (false);
+			pillow1.SetActive (false);
+			pillow2.SetActive (false);
+			pillow3.SetActive (false);
+			pillow4.SetActive (false);
+			pillow5.SetActive (false);
+			paper.SetActive (false);
+			plant.SetActive (false);
+			book.SetActive (false);
+			book2.SetActive (false);
+			book3.SetActive (false);
+			book4.SetActive (false);
+			book5.SetActive (false);
+			book6.SetActive (false);
+			book7.SetActive (false);
+			book8.SetActive (false);
+			book9.SetActive (false);
+			book10.SetActive (false);
+			objectsout = 0;
+		}
+
+		if (other.tag == "float") {
+			objectsout += 1;
+			Debug.Log ("out");
+
+		}
 	}
 }

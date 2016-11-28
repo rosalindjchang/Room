@@ -19,10 +19,8 @@ public class CameraLook : MonoBehaviour {
 
 		if (viewPos.x > 0 && viewPos.x < 1 && viewPos.y > 0 && viewPos.y < 1 && viewPos.z > 0) {
 			isFrozen = true;
-			Debug.Log ("look");
 		} else {
 			isFrozen = false;
-			Debug.Log ("dontlook");
 		}
 			
 		
