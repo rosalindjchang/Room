@@ -23,7 +23,11 @@ public class room2Trigger : MonoBehaviour {
 	public GameObject book9;
 	public GameObject book10;
 	public GameObject door;
-	public Transform floatobjects;
+	public GameObject doortrigger;
+
+	public int totalOutOfRoom = 0;
+	public GameObject floatobjects;
+	public Bounds room2bounds;
 
 
 	void Start() {
@@ -46,11 +50,25 @@ public class room2Trigger : MonoBehaviour {
 		book8.GetComponent<paperfloat> ().enabled = false;
 		book9.GetComponent<paperfloat> ().enabled = false;
 		book10.GetComponent<paperfloat> ().enabled = false;
+		doortrigger.SetActive (false);
 
-		floatobjects = GameObject.FindGameObjectWithTag ("float").transform;
+		floatobjects = GameObject.FindWithTag ("float");
+
+
+	}
+
+	void Update() {
+
+		new Vector3 () = floatobjects.transform; 
+		
+		if (room2bounds.Contains (floatobjects)) {
+			totalOutOfRoom++;
+		}
+
 	}
 
 	void OnTriggerEnter(Collider other) {
+
 
 		pillow.GetComponent<CameraLook> ().enabled = true;
 		pillow1.GetComponent<CameraLook> ().enabled = true;
@@ -72,6 +90,7 @@ public class room2Trigger : MonoBehaviour {
 		book9.GetComponent<paperfloat> ().enabled = true;
 		book10.GetComponent<paperfloat> ().enabled = true;
 		StartCoroutine (wait());
+
 
 
 	}
