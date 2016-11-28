@@ -53,7 +53,7 @@ public class room2Trigger : MonoBehaviour {
 	}
 
 	void Update () {
-		if (objectsout >= 42) {
+		if (objectsout >= 43) {
 			doortrigger.SetActive (true);
 		}
 	}
