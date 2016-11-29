@@ -13,13 +13,13 @@ public class room4Trigger : MonoBehaviour {
 	public GameObject door;
 	public GameObject doortrigger;
 
-	public int objectsout;
+	private float gone = 0.07f;
 
 
 
 	void Start() {
 		doortrigger.SetActive (false);
-		objectsout = 0;
+
 		lamp.GetComponent<FadeObjects> ().enabled = false;
 		lamppole.GetComponent<FadeObjects> ().enabled = false;
 		lampbase.GetComponent<FadeObjects> ().enabled = false;
@@ -27,13 +27,27 @@ public class room4Trigger : MonoBehaviour {
 		shelf2.GetComponent<FadeObjects> ().enabled = false;
 		shelf3.GetComponent<FadeObjects> ().enabled = false;
 		rug.GetComponent<FadeObjects> ().enabled = false;
+
 	}
 
-	void Update ()  {
-		if (objectsout >= 5) {
-			doortrigger.SetActive (true);
+	void Update () {
+		var lampmat = lamp.GetComponent<Renderer> ();
+		var lamppolemat = lamppole.GetComponent<Renderer> ();
+		var lampbasemat = lampbase.GetComponent<Renderer> ();
+		var shelf1mat = shelf1.GetComponent<Renderer> ();
+		var shelf2mat = shelf2.GetComponent<Renderer> ();
+		var shelf3mat = shelf3.GetComponent<Renderer> ();
+		var rugmat = rug.GetComponent<Renderer> ();
+
+
+		if (lampmat.material.color.a < gone && lampbasemat.material.color.a <gone && lamppolemat.material.color.a <gone
+			&& shelf1mat.material.color.a < gone && shelf2mat.material.color.a < gone && shelf3mat.material.color.a < gone
+			&& rugmat.material.color.a < gone) {
+			doortrigger.SetActive(true);
+			Debug.Log ("GONEEEE");
 		}
 	}
+
 
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "Player") {
@@ -57,7 +71,7 @@ public class room4Trigger : MonoBehaviour {
 
 	void OnTriggerExit(Collider other) {
 		if (other.tag == "Player") {
-			objectsout = 0;
+			
 		}
 	
 	}
