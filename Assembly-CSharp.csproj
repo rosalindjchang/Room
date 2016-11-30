@@ -58,6 +58,7 @@
      <Compile Include="Assets\Script\Door1Open.cs" />
      <Compile Include="Assets\Script\FadeObjects.cs" />
      <Compile Include="Assets\Script\SinkDown.cs" />
+     <Compile Include="Assets\Script\StartPlaying.cs" />
      <Compile Include="Assets\Script\boxshelfsink.cs" />
      <Compile Include="Assets\Script\magazinefloat.cs" />
      <Compile Include="Assets\Script\paperfloat.cs" />
