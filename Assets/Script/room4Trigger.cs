@@ -69,10 +69,10 @@ public class room4Trigger : MonoBehaviour {
 		door.SetActive (false);
 	}
 
+
 	void OnTriggerExit(Collider other) {
-		if (other.tag == "Player") {
-			
-		}
+
+
 	
 	}
 }

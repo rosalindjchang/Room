@@ -65,6 +65,7 @@
      <Compile Include="Assets\Script\room2Trigger.cs" />
      <Compile Include="Assets\Script\room3Trigger.cs" />
      <Compile Include="Assets\Script\room4Trigger.cs" />
+     <Compile Include="Assets\Script\room5Trigger.cs" />
      <Compile Include="Assets\Script\sinkcloset.cs" />
      <None Include="Assets\First Person Drifter Controller\info.txt" />
  <Reference Include="UnityEngine.Networking">
