@@ -16,6 +16,7 @@
 /Users/rosalindchang/Room/Temp/bin/Debug/Assembly-CSharp.dll
 /Users/rosalindchang/Room/obj/Debug/Assembly-CSharp.dll
 /Users/rosalindchang/Room/obj/Debug/Assembly-CSharp.dll.mdb
+<<<<<<< HEAD
 /Users/charlottegautier/Downloads/Room-master/Temp/bin/Debug/Assembly-CSharp.dll.mdb
 /Users/charlottegautier/Downloads/Room-master/Temp/bin/Debug/Assembly-CSharp.dll
 /Users/charlottegautier/Downloads/Room-master/obj/Debug/Assembly-CSharp.dll
@@ -34,3 +35,5 @@
 /Users/charlottegautier/Downloads/Room-master/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/charlottegautier/Downloads/Room-master/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/charlottegautier/Downloads/Room-master/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+=======
+>>>>>>> 2221bd212e4e2e32fbf19a9771db2214e4cb1a81

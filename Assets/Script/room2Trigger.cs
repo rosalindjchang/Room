@@ -23,12 +23,15 @@ public class room2Trigger : MonoBehaviour {
 	public GameObject book9;
 	public GameObject book10;
 	public GameObject door;
+<<<<<<< HEAD
 	public GameObject shelfadornment1;
 	public GameObject shelfadornment2;
 	public GameObject shelfadornment3;
 	public GameObject vase;
 	public GameObject stereo;
 	public GameObject photoframe;
+=======
+>>>>>>> 2221bd212e4e2e32fbf19a9771db2214e4cb1a81
 	public GameObject doortrigger;
 
 	public int objectsout;
@@ -53,12 +56,15 @@ public class room2Trigger : MonoBehaviour {
 		book8.GetComponent<paperfloat> ().enabled = false;
 		book9.GetComponent<paperfloat> ().enabled = false;
 		book10.GetComponent<paperfloat> ().enabled = false;
+<<<<<<< HEAD
 		shelfadornment1.GetComponent<paperfloat> ().enabled = false;
 		shelfadornment2.GetComponent<paperfloat> ().enabled = false;
 		shelfadornment3.GetComponent<paperfloat> ().enabled = false;
 		vase.GetComponent<paperfloat> ().enabled = false;
 		stereo.GetComponent<paperfloat> ().enabled = false;
 		photoframe.GetComponent<paperfloat> ().enabled = false;
+=======
+>>>>>>> 2221bd212e4e2e32fbf19a9771db2214e4cb1a81
 		doortrigger.SetActive (false);
 
 		objectsout = 0;
@@ -92,12 +98,15 @@ public class room2Trigger : MonoBehaviour {
 			book8.GetComponent<paperfloat> ().enabled = true;
 			book9.GetComponent<paperfloat> ().enabled = true;
 			book10.GetComponent<paperfloat> ().enabled = true;
+<<<<<<< HEAD
 			shelfadornment1.GetComponent<paperfloat> ().enabled = true;
 			shelfadornment2.GetComponent<paperfloat> ().enabled = true;
 			shelfadornment3.GetComponent<paperfloat> ().enabled = true;
 			vase.GetComponent<paperfloat> ().enabled = true;
 			stereo.GetComponent<paperfloat> ().enabled = true;
 			photoframe.GetComponent<paperfloat> ().enabled = true;
+=======
+>>>>>>> 2221bd212e4e2e32fbf19a9771db2214e4cb1a81
 			StartCoroutine (wait());
 
 		}
@@ -118,12 +127,15 @@ public class room2Trigger : MonoBehaviour {
 			pillow3.SetActive (false);
 			pillow4.SetActive (false);
 			pillow5.SetActive (false);
+<<<<<<< HEAD
 			shelfadornment1.SetActive (false);
 			shelfadornment2.SetActive (false);
 			shelfadornment3.SetActive (false);
 			vase.SetActive (false);
 			stereo.SetActive (false);
 			photoframe.SetActive (false);
+=======
+>>>>>>> 2221bd212e4e2e32fbf19a9771db2214e4cb1a81
 			paper.SetActive (false);
 			plant.SetActive (false);
 			book.SetActive (false);
