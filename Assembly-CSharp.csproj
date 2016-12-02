@@ -6,11 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-<<<<<<< .merge_file_vBJ0Hg
-    <ProjectGuid>{7E7011A2-9A3B-4D23-CB0D-AC355569DB64}</ProjectGuid>
-=======
     <ProjectGuid>{13895069-5644-BA72-48BD-816C5C55FC7C}</ProjectGuid>
->>>>>>> .merge_file_TCQEis
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -73,10 +69,7 @@
      <Compile Include="Assets\Script\room5Trigger.cs" />
      <Compile Include="Assets\Script\sinkcloset.cs" />
      <None Include="Assets\First Person Drifter Controller\info.txt" />
-<<<<<<< .merge_file_vBJ0Hg
      <None Include="Assets\WallGradient.shader" />
-=======
->>>>>>> .merge_file_TCQEis
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
