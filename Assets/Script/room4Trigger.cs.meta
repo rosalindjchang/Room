@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 17d04c952f51b4e3d96f874b9a061c57
+timeCreated: 1480450915
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - lamp: {instanceID: 0}
+  - lamppole: {instanceID: 0}
+  - lampbase: {instanceID: 0}
+  - shelf1: {instanceID: 0}
+  - shelf2: {instanceID: 0}
+  - shelf3: {instanceID: 0}
+  - rug: {instanceID: 0}
+  - door: {instanceID: 0}
+  - doortrigger: {instanceID: 0}
+  - lampmat: {fileID: 2100000, guid: 5a53e1395bbea487bae14da4f59d4931, type: 2}
+  - lamppolemat: {instanceID: 0}
+  - lampbasemat: {instanceID: 0}
+  - shelf1mat: {instanceID: 0}
+  - shelf2mat: {instanceID: 0}
+  - shelf3mat: {instanceID: 0}
+  - rugmat: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
